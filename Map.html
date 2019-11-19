@@ -1,0 +1,104 @@
+<!-- Created by Bartek Derewecki for UoD -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mapping exercise</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+<link rel="stylesheet" href="./Leaflet.markercluster-1.4.1/dist/MarkerCluster.css"/>
+<link rel="stylesheet" href="./Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script> 
+<script src="./jquery-3.4.1.js"></script>
+
+<style type="text/css">
+	.leaflet-popup-content{
+		margin: 10px;
+	}
+	.leaflet-popup-content-wrapper{
+		font-family: "Baxter Sans Core"; 
+		font-size: 15px;
+		text-align: center;
+		border-radius: 6px;
+	}
+	.leaflet-popup-close-button {
+		display: none;
+	}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+<div id="map" style="height: 400px; width:750px; border: 3px solid #4365E1;"></div>
+
+<button type="button" id=All class="btn btn-success">Show All</button>
+<button type="button" id=GCRF class="btn btn-primary">GCRF Projects</button>
+<button type="button" id=EPDU class="btn btn-secondary">EPDU Partnerships</button>
+<button type="button" id=Remove class="btn btn-danger">Remove all</button>
+
+<button type="button" id=Science class="btn btn-danger">Science and Engineering</button>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="ScienceEngineering">
+  <label class="form-check-label" for="defaultCheck1">
+    Science and Engineering
+  </label>
+</div>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="Humanitites">
+  <label class="form-check-label" for="defaultCheck1">
+    Humanitites
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="LifeSciences">
+  <label class="form-check-label" for="defaultCheck1">
+    Life Sciences
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="SocialSciences">
+  <label class="form-check-label" for="defaultCheck1">
+    Social Sciences
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="DJCAD">
+  <label class="form-check-label" for="defaultCheck1">
+    DJCAD
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="Nursing">
+  <label class="form-check-label" for="defaultCheck1">
+    Nursing and Health Sciences
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="Medicine">
+  <label class="form-check-label" for="defaultCheck1">
+    Medicine
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="Education">
+  <label class="form-check-label" for="defaultCheck1">
+    Education and Social Work
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="Dentistry">
+  <label class="form-check-label" for="defaultCheck1">
+    Dentistry
+  </label>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
